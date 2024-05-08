@@ -1,5 +1,5 @@
 FROM python:3.11
-WORKDIR .
+
 
 COPY requirements.txt ./
 COPY titanic_model.joblib ./
