@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 def ingest_data(file_path: str) -> pd.DataFrame:
-    return pd.read_excel(file_path)
+    return pd.read_excel(file_path,engine='xlrd')
 
 
 def clean_data(df: pd.DataFrame) -> pd.DataFrame:
